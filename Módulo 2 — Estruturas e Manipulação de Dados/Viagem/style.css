@@ -34,7 +34,6 @@ body {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
-    
     padding: 20px;
     box-sizing: border-box;
     background-color: #0218739e;
@@ -49,6 +48,17 @@ body {
 }
 
 .container input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: rgba(255, 255, 255, 0.44) solid 3px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #0000009e;
+    color: white;
+}
+
+.container select {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -86,4 +96,13 @@ body {
     justify-content: center; /* Centraliza os itens horizontalmente */
     gap: 10px; /* Adiciona espaçamento entre os botões */
     margin-top: 20px;
+}
+
+#preco-destaque {
+    background-color: #6b6dec; /* Um laranja claro contrastante */
+    border: 2px solid #e6e6e6a1; /* Uma borda laranja mais escura */
+    padding: 3px 6px; /* Espaçamento interno */
+    border-radius: 4px; /* Cantos levemente arredondados */
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: #000000; /* Cor do texto para melhor contraste */
 }

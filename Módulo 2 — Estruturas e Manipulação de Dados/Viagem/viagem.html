@@ -13,8 +13,14 @@
     <div class="container">
         <h1>Calculadora de Preço de Viagem</h1>
         <form id="viagemForm">
-            <label for="precoComb">Preço do Combustível (R$/L):</label>
-            <input type="number" id="precoComb" name="precoComb" required>
+            
+            <label for="tipoCombustivel">Tipo de Combustível:</label>
+            <select id="tipoCombustivel" name="tipoCombustivel" required>
+                <option value="gasolina">Gasolina</option>
+                <option value="etanol">Etanol</option>
+                <option value="diesel">Diesel</option>
+                <option value="null"></option>
+            </select>
 
             <label for="distancia">Distância da Viagem (km):</label>
             <input type="number" id="distancia" name="distancia" required>
@@ -23,7 +29,7 @@
             <input type="number" id="consumo" name="consumo" required>
             <div class="button">
                 <button type="button" onclick="calcularPrecoViagem();">Calcular</button>
-                <button type="reset"    >Limpar</button>
+                <button type="reset">Limpar</button>
             </div>
             <div class="result" id="mostrarresult" hidden>
                 <h2>Resultado:</h2>
