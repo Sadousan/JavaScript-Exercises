@@ -1,0 +1,89 @@
+html, body {
+    height: 100%; /* Ocupa 100% da altura da viewport */
+    margin: 0; /* Remove margens padrão do navegador */
+    padding: 0; /* Remove preenchimentos padrão do navegador */
+    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+}
+
+/* Para navegadores baseados em Webkit (Chrome, Safari, Edge, Opera) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Para Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+  appearance: textfield; /* padrão moderno */
+}
+
+
+body {
+    display: flex; /* Usa Flexbox para layout */
+    font-family: Arial, sans-serif;
+    background-image: url('imgs/cyberviagem.png');
+    /* para a imagem nao se repetir: */
+    background-size: cover;
+    color: #fbfbfb;
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+
+.container{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #0218739e;
+    border: #c311e2b8 solid 3px;
+    border-radius: 10px;
+
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.container input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: rgba(255, 255, 255, 0.44) solid 3px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #0000009e;
+    color: white;
+}
+
+.container input:hover, .container input:focus{
+    border: #c311e2b8 solid 3px;
+}
+
+.container button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #61b6e5b8;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.container button:hover{
+    scale: 1.05;
+    background-color: #7029e29e;
+}
+
+.button {
+    display: flex; /* Transforma o grupo em um container flex */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 10px; /* Adiciona espaçamento entre os botões */
+    margin-top: 20px;
+}
